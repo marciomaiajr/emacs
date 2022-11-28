@@ -54,7 +54,7 @@
 
 * Ibuffer
 #+begin_src emacs-lisp
-(defalias 'list-buffers 'ibuffer-evil)
+(defalias 'list-buffers 'ibuffer)
 #+end_src
 
 * Ace Window (/desabilitado/)
@@ -241,7 +241,6 @@
   (use-package evil
     :ensure t
     :init
-    (setq evil-want-integration t)
     (setq evil-want-keybinding nil)
     :config
     (evil-mode 1))
